@@ -4,6 +4,8 @@ password: admin
 
 The same API path for all actions like Search, Filter & Ordering
 
+For List view --> http://localhost:8000/
+
 <!-- Search Query Parameter -->
 http://localhost:8000/?search=
 
