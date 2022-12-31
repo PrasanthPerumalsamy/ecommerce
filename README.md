@@ -15,17 +15,17 @@ ex:
 
 
 <!-- Filter Query Parameter -->
-http://localhost:8000/?category=
+ex: http://localhost:8000/?producttype=&category=&active=
 
-ex:
-    http://localhost:8000/?category=3
-    http://localhost:8000/?category=1&active=true
+By product type --> http://localhost:8000/?producttype=3 (Electronics, Gadgets, Storage) As many-to-many relationship
+
+By category --> http://localhost:8000/?category=1 (Mobile, laptops, pendrives)
+Active & Inactive --> http://localhost:8000/?active=false
 
 
 <!-- Sorting Query Parameter -->
-http://localhost:8000/?ordering=-id
-
-ex:
-    http://localhost:8000/?ordering=-id
-    http://localhost:8000/?active=true&category=1&ordering=id
+By Popularity --> http://localhost:8000/?ordering=-rating
+Price Low to High --> http://localhost:8000/?ordering=price
+PRice Hight to Low --> http://localhost:8000/?ordering=-price
+Newest First --> http://localhost:8000/?ordering=-id
 

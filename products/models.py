@@ -26,7 +26,7 @@ class Product(models.Model):
 class ProductType(models.Model):
     type_name       = models.CharField(max_length=250)
     type_id         = models.PositiveBigIntegerField()
-    publications    = models.ManyToManyField(Product)
+    prod_type       = models.ManyToManyField(Product)
 
     def __str__(self):
         return self.type_name
